@@ -1,0 +1,3 @@
+rootProject.name = 'Izifo'
+
+include ':app'
