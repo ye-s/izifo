@@ -12,6 +12,8 @@ import {
     Text,
     View,
     Button,
+    Header,
+    Body,
     Image,
     Svg
 } from 'react-native';
