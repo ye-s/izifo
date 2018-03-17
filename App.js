@@ -6,11 +6,13 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
+    AppRegistry,
+    Platform,
+    StyleSheet,
+    Text,
+    View
 } from 'react-native';
+import Login from './js/login'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -30,6 +32,8 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           To get started please check if you have any new allergies
         </Text>
+          <Text>Welcome to the Facebook SDK for React Native!</Text>
+                <Login />
         <Text style={styles.instructions}>
           {instructions}
         </Text>
@@ -56,3 +60,6 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+AppRegistry.registerComponent('fbsdk', () => fbsdk);
+
